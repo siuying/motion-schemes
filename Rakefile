@@ -5,8 +5,7 @@ require 'rubygems'
 require 'bundler'
 Bundler.require(:default)
 
-require './lib/motion/project/config'
-require './lib/motion/project/schemes'
+require './lib/motion-schemes'
 
 Motion::Project::App.setup do |app|
   app.name = 'motion-schemes'
