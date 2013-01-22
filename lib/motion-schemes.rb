@@ -4,3 +4,4 @@ end
 
 require File.join(File.dirname(__FILE__), "motion/project/config")
 require File.join(File.dirname(__FILE__), "motion/project/schemes")
+require File.join(File.dirname(__FILE__), "motion/project/version")

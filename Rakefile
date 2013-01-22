@@ -28,3 +28,8 @@ task :gem do
   sh "mkdir -p pkg"
   sh "mv *.gem pkg/"
 end
+
+desc "Release the gem"
+task :release => :gem do
+  sh "bundle exec gem push pkg/motion-schemes-#{Motion::Project::Schemes::VERSION}.gem"
+end
