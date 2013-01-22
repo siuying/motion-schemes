@@ -1,5 +1,3 @@
-require File.expand_path('../lib/stump/version', __FILE__)
-
 Gem::Specification.new do |gem|
   gem.authors = ["Francis Chong"]
   gem.email = ["francis@ignition.hk"]
@@ -11,7 +9,7 @@ Gem::Specification.new do |gem|
   gem.test_files = gem.files.grep(%r{^(test|spec|lib_spec|features)/})
   gem.name = "motion-schemes"
   gem.require_paths = ["lib"]
-  gem.version = Motion::Schemes::VERSION
+  gem.version = "0.0.1"
 
   gem.add_development_dependency 'rake'
 end

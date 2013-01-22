@@ -1,7 +1,16 @@
-GEM
+PATH
+  remote: .
   specs:
+    motion-schemes (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (10.0.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  motion-schemes!
+  rake
