@@ -19,6 +19,17 @@ require 'rubygems'
 require 'motion-schemes'
 ```
 
+Specify your common build setting as you normally would. Use app.scheme to specify the current build scheme.
+
+```ruby
+Motion::Project::App.setup do |app|
+  app.name = 'motion-schemes'
+  app.scheme = :ipad
+
+  # Your regular shared app setup
+end
+```
+
 Use Motion::Project::App.scheme to specify custom app settings for a scheme:
 
 ```ruby
@@ -33,20 +44,7 @@ Motion::Project::App.scheme(:ipad) do |app|
 end
 ```
 
-You can use app.scheme to specify currently selected scheme:
-
-```ruby
-
-Motion::Project::App.setup do |app|
-  app.name = 'motion-schemes'
-  app.scheme = :ipad
-
-  # Your regular shared app setup
-end
-```
-
-Run ```rake``` to build the app using currently selected scheme. If no scheme is specified in setup block, the first
-scheme will be used.
+Run ```rake``` to build the app using selected scheme.
 
 ## License
 
